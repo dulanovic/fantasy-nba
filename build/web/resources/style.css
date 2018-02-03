@@ -1,0 +1,827 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal .80em "Roboto", sans-serif;
+    background: #F0EFE2;
+    color: #48494A;
+}
+
+p {
+    padding: 0;
+    line-height: 1.7em;
+}
+
+img {
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: normal 175% "Merriweather", sans-serif;
+    color: #43423F;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
+
+h1 {
+    font: normal 200% "Merriweather", sans-serif;
+    color: #43423F;
+}
+
+h2 {
+    font: normal 190% "Merriweather", sans-serif;
+    color: #DD0000;
+}
+
+h3 {
+    font: normal 160% "Merriweather", sans-serif;
+    color: #43423F;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font: normal 120% "Merriweather", sans-serif;
+    color: #DD0000;
+}
+
+h5, h6 {
+    font: italic 95% "Merriweather", sans-serif;
+    padding: 0 0 15px 0;
+    color: #000;
+}
+
+
+h6 {
+    color: #362C20;
+}
+
+.naslov {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.podnaslov {
+    text-align: center;
+}
+
+a, a:hover {
+    outline: none;
+    text-decoration: none;
+    color: #43423F;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #F8951D;
+}
+
+.left {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+}
+
+.right {float: right; 
+        width: auto;
+        margin-left: 10px;
+}
+
+.center {display: block;
+         text-align: center;
+         margin: 20px auto;
+}
+
+blockquote {
+    margin: 20px 0; 
+    padding: 10px 20px 0 20px;
+    border: 1px solid #E5E5DB;
+    background: #FFF;
+}
+
+ul {
+    margin: 2px 0 22px 17px;
+}
+
+/*ul li {
+  list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+}*/
+
+ol {
+    margin: 8px 0 22px 20px;
+}
+
+ol li {
+    margin: 0 0 11px 0;
+}
+
+#main, #logo, #menubar, #site_content, #footer {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#header {
+    background-color: #072840;
+    height: 218px;
+}
+
+#logo {
+    width: 825px;
+    position: relative;
+    height: 168px;
+    background-color: #072840;
+}
+
+#logo #logo_text {
+    position: relative;
+    top: 30px;
+    left: 0;
+}
+
+#logo h1, #logo h2 {
+    font: normal 400% "Merriweather", arial, sans-serif;
+    border-bottom: 0;
+    text-transform: none;
+    margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover {
+    padding: 22px 0 0 0;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour {
+    color: #DD0000;
+}
+
+.logo_no_colour {
+    font-weight: 100;
+}
+
+
+.logo_colour {
+    font-weight: bold;
+}
+
+#logo_text h2 {
+    font-size: 100%;
+    padding: 4px 0 0 0;
+    color: #006BB6;
+}
+
+#login_form {
+    position: absolute;
+    top: 30px;
+    left: 650px;
+}
+
+#login_form a, #ulogovanKorisnik a {
+    color: #FFFFFF;
+}
+
+#ulogovanKorisnik {
+    position: absolute;
+    top: 60px;
+    left: 670px;
+}
+
+#menubar {
+    width: 877px;
+    height: 50px;
+    padding: 0;
+    background-color: #DD0000;
+    border-radius: 7px;
+}
+
+ul#nav-menu, ul#nav-menu li {
+    float: left;
+    margin: 0; 
+    padding: 0;
+}
+
+ul#nav-menu li {
+    list-style: none;
+}
+
+ul#nav-menu li a {
+    letter-spacing: 0.1em;
+    font: bold 120% "Merriweather", sans-serif;
+    display: block; 
+    float: left; 
+    height: 35px;
+    padding: 15px 26px 0 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 7px;
+    transition: background-color 0.5s ease-out;
+} 
+
+ul#nav-menu li a:hover, ul#nav-menu li.selected a, ul#nav-menu li.selected a:hover {
+    color: #FFF;
+    background-color: #AB0000;
+}
+
+#site_content {
+    width: 837px;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    padding: 20px 24px 20px 37px;
+    background: #FFF url(content.png) repeat-y;
+}
+
+#content {
+    text-align: left;
+    width: 837px;
+    padding: 0;
+}
+
+#content ul {
+    margin: 2px 0 22px 0px;
+}
+
+#content ul li {
+    list-style-type: none;
+    background: url(bullet.png) no-repeat;
+    margin: 0 0 6px 0; 
+    padding: 0 0 4px 25px;
+    line-height: 1.5em;
+}
+
+#footer {
+    width: 878px;
+    font: normal 100% "Slabo 27px", sans-serif;
+    height: 33px;
+    padding: 24px 0 5px 0;
+    text-align: center; 
+    background-color: #006BB6;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.tabelaKontejner {
+    margin: 0 auto;
+}
+
+.tabelaKontejner table {
+    margin: 0 auto;
+}
+
+.search {
+    color: #5D5D5D; 
+    border: 1px solid #BBB; 
+    width: 134px; 
+    padding: 4px; 
+    font: 100% arial, sans-serif;
+}
+
+.form_settings {
+    margin: 15px 0 0 0;
+}
+
+.form_settings p {
+    padding: 0 0 4px 0;
+}
+
+.form_settings span {
+    float: left; 
+    width: 200px; 
+    text-align: left;
+}
+
+.form_settings input, .form_settings textarea {
+    padding: 5px; 
+    width: 299px; 
+    font: 100% arial; 
+    border: 1px solid #E5E5DB; 
+    background: #FFF; 
+    color: #47433F;
+}
+
+.form_settings .submit {
+    font: 100% arial; 
+    border: 1px solid; 
+    width: 99px; 
+    margin: 0 0 0 212px; 
+    height: 33px;
+    padding: 2px 0 3px 0;
+    cursor: pointer; 
+    background: #263C56; 
+    color: #FFF;
+}
+
+.form_settings textarea, .form_settings select {
+    font: 100% arial; 
+    width: 299px;
+}
+
+.form_settings select {
+    width: 310px;
+}
+
+.form_settings .checkbox {
+    margin: 4px 0; 
+    padding: 0; 
+    width: 14px;
+    border: 0;
+    background: none;
+}
+
+.separator {
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #D9D5CF;
+    border-bottom: 1px solid #FFF;
+    margin: 0 0 20px 0;
+}
+
+/*table {
+    margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td {
+    background: #3B3B3B;
+    color: #FFF;
+    padding: 7px 4px;
+    text-align: left;
+}
+
+table tr td {
+    background: #F0EFE2;
+    color: #47433F;
+    border-top: 1px solid #FFF;
+}*/
+
+#table-login {
+    border: 0;
+    color: #FFF;
+}
+
+.validacija {
+    max-height: 19px;
+    color: #FF0000;
+}
+
+#izborPozicija {
+    margin-top: 20px;
+}
+
+#izborPozicija-button {
+    margin-left: 60px;
+}
+
+#tabelaIgraci {
+    table-layout: fixed;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.zaIzbor {
+    background: #006BB6;
+}
+
+#tabelaIgraci .ui-selecting {
+    background: #FF3737;
+}
+
+#tabelaIgraci .ui-selected {
+    background: #DD0000;
+    color: #FFFFFF;
+}
+
+.igracPodaci {
+
+}
+
+.zaIzbor {
+    text-align: center;
+    border: 0;
+    font-family: Roboto;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#tabelaIzbor {
+    margin-top: 10px;
+}
+
+#trenutnoNaRedu {
+    height: 80px;
+    background-color: #072840;
+    overflow: hidden;
+    text-align: center;
+}
+
+#trenutnoNaRedu .hdraft {
+    font-family: Merriweather;
+    color: #FFFFFF;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+
+#poruke {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Merriweather;
+    font-size: 14px;
+}
+
+#kontrolniPanel {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+#dugmiciPanel {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#dugmiciPanel button {
+    margin: 10px auto;
+}
+
+#izbor {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#igracPretraga {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#izborIgrac {
+    margin-right: 80px;
+    float: right;
+}
+
+#izabraniIgraci {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.prikazIzabranih {
+    margin: 10px auto;
+    display: inline-table;
+    text-align: center;
+}
+
+#vreme {
+    margin-top: 20px;
+    position: fixed;
+    font-size: 90px;
+    font-family: "Slabo 27px", serif;
+    color: #FFFFFF;
+    background: #DD0000;
+    z-index: 1;
+    width: 90px;
+    text-align: center;
+}
+
+#igraciTima {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#igraciTimaTabela {
+    margin: 0 auto;
+}
+
+.slikaFantasyIgrac {
+    width: 150px;
+}
+
+.logoFantasyIgrac {
+    width: 50px;
+}
+
+.centriraj {
+    text-align: center;
+}
+
+.datumTabela {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#trzisteTabela {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.tabelaPrikazIgraca {
+    margin: 0 auto;
+}
+
+#adminTabela tr {
+    height: 30px;
+}
+
+.igracSlikaPrikaz {
+    width: 200px;
+}
+
+.timLogoPrikaz {
+    width: 50px;
+}
+
+#podaciIgrac {
+    display: inline-block;
+    width: 800px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#podaciIgrac a:hover {
+    color: #DD0000;
+}
+
+#podaciIgracTabela {
+    margin-top: 25px;
+}
+
+#podaciIgracLevo {
+    float: left;
+    margin-left: 100px;
+    width: 350px;
+}
+
+.tabelaNBA a {
+    color: #006BB6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tabelaNBA a:hover {
+    color: #DD0000;
+}
+
+.tabelaNBA td:hover {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+}
+
+.logoVeliki {
+    display: block;
+    margin: auto;
+}
+
+#podaciTim {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pitanje {
+    float: right;
+    font-weight: bold;
+}
+
+#timRoster table, #timRoster td {
+    border-bottom: 1px solid #DCDDDF;
+    border-collapse: collapse;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+#timRoster th {
+    border-left: 1px solid #F8951D;
+    background-color: #F8951D;
+    color: #FFFFFF;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#timRoster tr {
+    height: 25px;
+}
+
+#timRoster tr:hover {
+    background-color: #FFFF88;
+}
+
+#timRoster {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#utakmice table, #utakmice td {
+    border-bottom: 1px solid #DCDDDF;
+    border-collapse: collapse;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+#utakmice a:hover {
+    color: #AB0000;
+}
+
+#utakmice th {
+    border-left: 1px solid #002F50;
+    background-color: #002F50;
+    color: #FFFFFF;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#utakmice tr {
+    height: 25px;
+}
+
+#utakmice tr:hover {
+    background-color: #F1F2F3;
+}
+
+#utakmice {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#utakmice img {
+    width: 40px;
+}
+
+#timStatistika table, #timStatistika td {
+    border-bottom: 1px solid #DCDDDF;
+    border-collapse: collapse;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+/*#timStatistika th {
+    border-left: 1px solid #454340;
+    background-color: #454340;
+    color: #FFFFFF;
+}*/
+
+#timStatistika tr {
+    height: 25px;
+}
+
+#timStatistika tr:hover {
+    background-color: #FFFF88;
+    color: #DD0000;
+}
+
+#timStatistika {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#timStatistika a:hover {
+    color: #DD0000;
+}
+
+#tabelePoredak table {
+    font-family: Verdana;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+#tabelePoredak table td {
+    border-bottom: 1px solid #DCDDDF;
+}
+
+#tabelePoredak table th {
+    height: 25px;
+    color: #FFFFFF;
+}
+
+#tabelePoredak table tr:hover {
+    background-color: #FFFF88;
+}
+
+.istok tr:nth-child(8) {
+    border-bottom: 2px solid #006BB6;
+}
+
+.zapad tr:nth-child(8) {
+    border-bottom: 2px solid #ED174C;
+}
+
+.istok thead, .istok thead tr:hover {
+    background-color: #006BB6;
+}
+
+.zapad thead, .zapad thead tr:hover {
+    background-color: #ED174C;
+}
+
+.levo {
+    text-align: left;
+}
+
+#semafor table {
+    margin: 20px auto;
+}
+
+#semafor td {
+    padding: 15px;
+}
+
+.timSemafor {
+    font-family: "Merriweather", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.timSemafor a:hover {
+    text-decoration: none;
+}
+
+.rezultatSemafor {
+    font-family: "Merriweather", sans-serif;
+    font-size: 32px;
+}
+
+#ispisValidacija {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#grafickiPrikaz {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.grafici {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#igraciTabelarno td {
+    text-align: center;
+}
+
+#tabelaranPrikaz {
+    font-family: "Open sans";
+}
+
+#tabelaranPrikaz label {
+    color: #FFFFFF;
+}
+
+#igraciTabelarno_info, #igraciTabelarno_paginate {
+    color: #FFFFFF;
+}
+
+.vest {
+    margin-top: 30px;
+}
+
+.vest p {
+    font-family: "Open sans";
+    font-size: 14px;
+    margin-top: 10px;
+    color: #48494A;
+}
+
+.vest img {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.datumVest {
+    font-family: "Merriweather";
+    font-size: 12px;
+    color: #362C20;
+    margin-top: 5px;
+}
